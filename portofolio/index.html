@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <title>Portofolio Naufal</title>
+  <meta name="description" content="Fresh graduate Teknik Informatika, passionate di data engineering & analytics." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/projects.css" />
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">Portofolio Naufal</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#experience">experience</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+
+      <!-- Kiri: teks -->
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="status-dot"></span>
+          open to work
+        </div>
+        <h1>
+          Hai, saya <span class="name-highlight">Naufal Lathifan Yumna</span><br />
+          <!-- <span class="title-line">Data Engineer.</span> -->
+        </h1>
+        <p class="hero-desc">
+            fresh graduate S1 Teknik Informatika Universitas Islam Sultan Agung (2022–2026) dengan fokus di bidang data dan
+            pengembangan sistem berbasis web. Berpengalaman dalam eksplorasi dan analisis data, manajemen basis data MySQL,
+            serta pembangunan sistem informasi berbasis web. Terbukti mampu berkontribusi dalam proyek nyata di lingkungan
+            akademik dan organisasi kemahasiswaan.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary">Lihat Projects</a>
+          <a href="assets/CV_Naufal_Lathifan_Yumna.pdf" class="btn-outline" target="_blank">Download CV</a>
+        </div>
+      </div>
+
+      <!-- Kanan: foto -->
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-ring">
+          <img
+            src="assets/img/gambar.jpg"
+            alt="Foto Naufal Lathifan Yumna"
+            class="hero-photo"
+            onerror="this.style.display='none'; this.parentElement.classList.add('no-photo');"
+          />
+          <div class="hero-photo-placeholder">
+            <span>NLY</span>
+          </div>
+        </div>
+        <!-- Badge floating -->
+        <div class="hero-float-badge">
+          <span class="float-icon">🦉</span>
+          <div>
+            <div class="float-title">NAUFAL LATHIFAN YUMNA</div>
+            <div class="float-sub">Teknik Informatika</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== STATS ==================== -->
+  <div class="stats-wrapper">
+    <div class="stats-row">
+      <div class="stat-item">
+        <div class="stat-num">2<span>+</span></div>
+        <div class="stat-label">projects selesai</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">2<span></span></div>
+        <div class="stat-label">dicoding certified</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">3<span>+</span></div>
+        <div class="stat-label">tech stack dikuasai</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">3.8<span></span></div>
+        <div class="stat-label">IPK lulus</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== PROJECTS ==================== -->
+  <section class="section" id="projects">
+    <div class="section-inner">
+      <div class="section-label">// selected work</div>
+      <h2 class="section-title">Proyek & Portofolio</h2>
+
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Diisi oleh js/data.js + main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SKILLS ==================== -->
+  <section class="section section-alt" id="skills">
+    <div class="section-inner">
+      <div class="section-label">// tech stack</div>
+      <h2 class="section-title">Skills & Tools</h2>
+
+      <div class="skills-layout">
+        <!-- Skill Bars -->
+        <div class="skill-bars">
+          <div class="skill-group-title">// core skills</div>
+
+          <div class="skill-item" data-reveal>
+            <div class="skill-header">
+              <span class="skill-name">SQL (MySQL, Oracle, BigQuery)</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--target: 80%; background: linear-gradient(90deg, #6c63ff, #9b95ff);"></div>
+            </div>
+          </div>
+
+          <div class="skill-item" data-reveal>
+            <div class="skill-header">
+              <span class="skill-name">Python (Pandas, NumPy)</span>
+              <span class="skill-pct">75%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--target: 75%; background: linear-gradient(90deg, #00d9b5, #00b09c);"></div>
+            </div>
+          </div>
+
+          <div class="skill-item" data-reveal>
+            <div class="skill-header">
+              <span class="skill-name">ETL / Data Pipeline</span>
+              <span class="skill-pct">70%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--target: 70%; background: linear-gradient(90deg, #ffd166, #e6b800);"></div>
+            </div>
+          </div>
+
+          <div class="skill-item" data-reveal>
+            <div class="skill-header">
+              <span class="skill-name">Data Visualization (Power BI, Excel)</span>
+              <span class="skill-pct">50%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--target: 50%; background: linear-gradient(90deg, #ff6b6b, #e64f4f);"></div>
+            </div>
+          </div>
+
+          <div class="skill-item" data-reveal>
+            <div class="skill-header">
+              <span class="skill-name">Database Design (ERD, Normalization)</span>
+              <span class="skill-pct">75%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="--target: 75%; background: linear-gradient(90deg, #9b95ff, #6c63ff);"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools Grid -->
+        <div class="tools-col">
+          <div class="skill-group-title">// tools & platforms</div>
+          <div class="tools-grid">
+            <div class="tool-chip">🐍<span>Python</span></div>
+            <div class="tool-chip">🗄️<span>MySQL</span></div>
+            <div class="tool-chip">🔮<span>Oracle SQL</span></div>
+            <div class="tool-chip">☁️<span>BigQuery</span></div>
+            <div class="tool-chip">🔧<span>Talend</span></div>
+            <div class="tool-chip">📊<span>Power BI</span></div>
+            <div class="tool-chip">📓<span>Jupyter</span></div>
+            <div class="tool-chip">📈<span>Excel</span></div>
+            <div class="tool-chip">🐼<span>Pandas</span></div>
+            <div class="tool-chip">🔀<span>Git</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EXPERIENCE ==================== -->
+  <section class="section" id="experience">
+    <div class="section-inner">
+      <div class="section-label">// background</div>
+      <h2 class="section-title">Pengalaman & Pendidikan</h2>
+
+      <div class="exp-timeline">
+
+        <div class="exp-item" data-reveal>
+          <div class="exp-meta">2025</div>
+          <div class="exp-role">Developer — Sistem Generator SK Otomatis</div>
+          <div class="exp-company">UNISSULA Semarang</div>
+          <p class="exp-desc">
+            Membangun sistem otomasi pembuatan Surat Keputusan (SK) berbasis database MySQL
+            dan PHP. Mengurangi waktu pembuatan dokumen dari proses manual berhari-hari
+            menjadi beberapa menit.
+          </p>
+        </div>
+
+        <div class="exp-item" data-reveal>
+          <div class="exp-meta">2025</div>
+          <div class="exp-role">Developer — SIMRS UNISVET</div>
+          <div class="exp-company">Universitas Islam Sultana Agung (UNISSULA)</div>
+          <p class="exp-desc">
+            Mengembangkan Sistem Informasi Manajemen Rumah Sakit (SIMRS) untuk RS Pendidikan
+            UNISVET. Database-driven dengan MySQL, mencakup modul pendaftaran pasien,
+            rekam medis, dan laporan harian.
+          </p>
+        </div>
+
+        <div class="exp-item" data-reveal>
+          <div class="exp-meta">2023 — 2025</div>
+          <div class="exp-role">BEM FTI UNISSULA</div>
+          <div class="exp-company">Universitas Islam Sultan Agung (UNISSULA) Semarang</div>
+          <p class="exp-desc">Staff Kementerian Dalam Negeri (Kabinet Dharma Sahitya & Kabinet Harmoni Hasta)</p>
+          <ul class="exp-list">
+            <li>Bertanggung jawab atas urusan internal dan koordinasi antar lembaga kemahasiswaan FTI UNISSULA.</li>
+            <li>Menjalin hubungan sinergis antara lembaga, mahasiswa, dan civitas akademika.</li>
+            <li>Koordinasi kegiatan internal dengan presiden dan wakil presiden BEM.</li>
+          </ul>
+        </div>
+
+        <div class="exp-item" data-reveal>
+          <div class="exp-meta">2022 — 2026</div>
+          <div class="exp-role">S1 Teknik Informatika</div>
+          <div class="exp-company">Universitas Islam Sultan Agung (UNISSULA) Semarang</div>
+          <p class="exp-desc">
+            Lulus dengan fokus di basis data dan sistem informasi. Menyelesaikan kursus
+            SQL dan Data Science di Dicoding. Mengerjakan EDA proyek-proyek akademik
+            menggunakan Python dengan library yang ada.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section class="section" id="contact">
+    <div class="section-inner">
+      <div class="contact-box">
+        <h2 class="contact-title">Mari Ngobrol👋</h2>
+        <p class="contact-desc">
+          Open untuk peluang kerja, kolaborasi proyek, atau diskusi soal data
+          dan SQL optimization. Let's connect!
+        </p>
+        <div class="contact-links">
+          <a href="mailto:naufallathifan.3@gmail.com" class="contact-link">
+            <span class="contact-icon">✉️</span> naufallathifan.3@gmail.com
+          </a>
+          <a href="https://linkedin.com/in/naufal-lathifan-yumna" target="_blank" class="contact-link">
+            <span class="contact-icon">💼</span> LinkedIn
+          </a>
+          <a href="https://github.com/naufallathifan3" target="_blank" class="contact-link">
+            <span class="contact-icon">🐙</span> GitHub
+          </a>
+          <a href="assets/CV_Naufal_Lathifan_Yumna.pdf" target="_blank" class="contact-link">
+            <span class="contact-icon">📄</span> Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <div class="footer-inner">
+      <span>© 2026 Naufal Lathifan Yumna</span>
+      <span>built with slowly 🤙😎</span>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
